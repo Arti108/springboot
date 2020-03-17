@@ -35,7 +35,7 @@ public class App
         
         sess.save(e1);
         sess.getTransaction().commit();
-        System.out.println("successfully saved");
+        System.out.println("successfully saved!!");
         
     }
 }
