@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService{
 	@Transactional
 	public User checkUser(User theUser)
 	{
-		
+		System.out.println("jhiidfh");
 		return UserDao.checkUser(theUser);
 		
 		
