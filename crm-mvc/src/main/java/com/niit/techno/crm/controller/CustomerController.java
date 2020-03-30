@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.techno.crm.model.Customer;
+import com.niit.techno.crm.model.Elite;
 import com.niit.techno.crm.service.CustomerService;
 
 @Controller
@@ -43,7 +45,12 @@ public class CustomerController {
 	return "list-customers";
 	}
 
-
+	@GetMapping("/updateForm")
+	public String showFormForUpdate(@RequestParam("customerId")int theId,ModelMap theModel) {
+		Customer theCustomer=customerService.getCustomer(theId);
+		theModel.addAttribute("customer",theCustomer);
+		return "customer-form";
+	}
 	
 	
 	

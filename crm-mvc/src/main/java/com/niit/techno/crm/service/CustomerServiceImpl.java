@@ -30,5 +30,12 @@ public List<Customer> getCustomers() {
 	return customerDAO.getCustomers();
 }
 
+@Override
+@Transactional
+public Customer getCustomer(int theId) {
+	// TODO Auto-generated method stub
+	return customerDAO.getCustomer(theId);
+}
+
 }
 

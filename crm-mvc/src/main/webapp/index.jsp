@@ -6,6 +6,8 @@
 <a href="customer/list">View Customer Details</a><br><br>
 <a href="user/loginForm">Customer Login</a><br><br>
 <a href="admin/adminLogin">Admin Login</a><br><br>
+<a href="elite/regForm">Elite Customer Registration></a><br><br>
+<a href="elite/loginECustomer">Elite Customer Login></a><br><br>
 
 
 </body>
