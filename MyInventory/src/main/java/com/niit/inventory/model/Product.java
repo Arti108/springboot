@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Product {
@@ -57,4 +59,16 @@ public float getPrice() {
 public void setPrice(float price) {
 	this.price = price;
 }
+@ManyToOne
+@JoinColumn(name = "orderId")
+private Order1 order;
+
+public Order1 getOrder() {
+	return order;
+}
+
+public void setOrder(Order1 order) {
+	this.order = order;
+}
+
 }

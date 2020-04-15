@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+
 import com.niit.inventory.model.Product;
 import com.niit.inventory.service.ProductService;
 
@@ -63,4 +64,12 @@ public String viewProductToCustomer(Model model)
 	return "products-cust";
 	}
 
+/*
+@RequestMapping("/newOrder")
+public String createNewOrder(Model model) {
+Order order = new Order();
+model.addAttribute("order", order);
+
+return "new-order";
+}*/
 }
